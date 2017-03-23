@@ -1,4 +1,5 @@
 var slideIndex = 0; // khởi tạo giá trị đầu của slide là 0
+var myTime;// sau 6s làm mới lại showslide
 
 showSlide();
 
@@ -15,8 +16,8 @@ function showSlide() {
         slideIndex = 1;        //slide quay về tấm hình 1
     }
     sumSlide[slideIndex - 1].style.display = 'block'; //xuất tấm hình vị trí được chọn
-    dost[slideIndex - 1].style.border= '2px solid red';//border hình được chọn bên dưới
-    setTimeout(showSlide, 6000); // sau 6s làm mới lại showslide
+    dost[slideIndex - 1].style.border = '2px solid red';//border hình được chọn bên dưới
+    myTime = setTimeout(showSlide, 6000);
 }
 
 function slideNextPrev(n) { //khi click slide chạy tăng or giảm
@@ -37,7 +38,9 @@ function slideNextPre(n) {
         dost[i].style.border = 'none';//xóa tất cả border
     }
     sumSlide[slideIndex - 1].style.display = 'block'; //xuất tấm hình vị trí được chọn
-    dost[slideIndex - 1].style.border= '2px solid red';//border hình được chọn bên dưới
+    dost[slideIndex - 1].style.border = '2px solid red';//border hình được chọn bên dưới
+    clearTimeout(myTime);
+    myTime = setTimeout(showSlide, 6000);
 }
 
 //func click incon image
@@ -52,5 +55,7 @@ function picIconimg(n) {
         dost[i].style.border = 'none';//xóa tất cả border
     }
     sumSlide[slideIndex - 1].style.display = 'block'; //xuất tấm hình vị trí được chọn
-    dost[slideIndex - 1].style.border= '2px solid red';//border hình được chọn bên dưới
+    dost[slideIndex - 1].style.border = '2px solid red';//border hình được chọn bên dưới
+    clearTimeout(myTime);
+    myTime = setTimeout(showSlide, 6000);
 }
