@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FormAjax</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <form name="myForm" action="#" method="post" onsubmit="return validateForm()">
+            <table class="container_table">
+                <tr>
+                    <td class="text">Username:</td>
+                    <td class="input_style"><input type="text" name="username"></td>
+                    <td class="error" id="error_username"></td>
+                </tr>
+                <tr>
+                    <td class="text">Password:</td>
+                    <td class="input_style"><input type="password" name="password"></td>
+                    <td class="error" id="error_password"></td>
+                </tr>
+                <tr>
+                    <td class="text">Email:</td>
+                    <td class="input_style"><input type="text" name="email"></td>
+                    <td class="error" id="error_email">
+                </tr>
+                <tr>
+                    <td class="text">Birthday:</td>
+                    <td>
+                        <div id="data-picker"></div>
+                        <script src="js/calendar.js"></script>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="button" colspan="2">
+                        <button class="style_btn" type="submit">SUBMIT</button>
+                        <button class="style_btn" type="reset">REFRESH</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</div>
+</body>
+</html>

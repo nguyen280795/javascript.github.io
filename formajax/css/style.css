@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    color: #555;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Add your css into here*/
+.fl_left {
+    float: left;
+}
+
+.fl_right {
+    float: right;
+}
+
+.container {
+    font-weight: bold;
+}
+
+.text {
+    margin-right: 1px;
+    padding: 12px 10px;
+    text-align: right;
+}
+
+.input_style input {
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 3px 2px #BCEFD2;
+    width: 256px;
+    height: 28px;
+}
+
+.container_table {
+    margin: auto;
+}
+
+.button {
+    padding: 6px 0 0 94px;
+}
+
+.button button {
+    height: 30px;
+    margin-right: 18px;
+    background: #2471A3;
+    border: none;
+    box-shadow: 0 0 3px 2px #8DBEFB;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+#data-picker input {
+    border: none;
+    font-size: 16px;
+    height: 28px;
+    width: 225px;
+    background: none;
+}
+
+#data-picker p {
+    position: relative;
+    width: 256px;
+    height: 28px;
+    background: white;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 3px 2px #BCEFD2;
+}
+
+#data-picker img {
+    position: absolute;
+    width: 26px;
+    height: initial;
+    float: right;
+    margin-right: 2px;
+}
+
+td.btn {
+    color: #2E86C1;
+    cursor: pointer;
+    background: #A9CCE3;
+}
+
+#title {
+    font-weight: bold;
+    color: #67282C;
+}
+
+#title td {
+    background: #3498DB;
+}
+
+select {
+    width: 92%;
+}
+
+#calendar-table {
+    margin-top: 10px;
+    font-weight: normal;
+    background: #D7DBDD;
+}
+
+#calendar-table td {
+    width: 28px;
+    height: 23px;
+    margin-top: 1px;
+    border: 1px solid #B5BDBE;
+    font-size: 12px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.error {
+    padding-left: 10px;
+    color: red;
+    font-weight: normal;
+}
+
+.style_btn:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
