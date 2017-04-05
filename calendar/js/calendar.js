@@ -150,6 +150,7 @@ function setDate() {
             if (count >= dayIndex)
                 check = true;
             if (check === true && position <= numberDay) {
+                console.log(position);
                 document.getElementById("day" + (position + dayIndex)).innerHTML = position;
                 document.getElementById("day" + (position + dayIndex)).style.background = "#FBFCFC";
                 if (dateNow === position && monthNow === checkmonth && yearNow === checkyear) {
